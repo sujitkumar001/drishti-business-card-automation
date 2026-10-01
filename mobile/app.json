@@ -1,0 +1,52 @@
+﻿{
+  "expo": {
+    "name": "Drishti",
+    "slug": "drishti",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/drishti-icon.png",
+
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Drishti uses the camera to scan business cards.",
+        "NSContactsUsageDescription": "Drishti saves scanned business-card contacts to your address book.",
+        "NSPhotoLibraryUsageDescription": "Drishti lets you select business-card images from your photo library.",
+        "LSApplicationQueriesSchemes": [
+          "whatsapp"
+        ]
+      }
+    },
+
+    "android": {
+      "package": "com.drishti.businesscardscanner",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_CONTACTS",
+        "android.permission.WRITE_CONTACTS"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/drishti-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Drishti to select business-card images for scanning.",
+          "cameraPermission": "Allow Drishti to use the camera to scan business cards.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "Allow Drishti to save scanned business-card contacts."
+        }
+      ]
+    ]
+  }
+}

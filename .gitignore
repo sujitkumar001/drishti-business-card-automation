@@ -1,0 +1,46 @@
+﻿# Dependencies
+node_modules/
+mobile/node_modules/
+server/node_modules/
+
+# Expo
+.expo/
+mobile/.expo/
+
+# Android build/cache
+mobile/android/.gradle/
+mobile/android/.cxx/
+mobile/android/build/
+mobile/android/app/build/
+mobile/android/local.properties/
+
+# Release signing - NEVER COMMIT
+mobile/release-keys/
+*.jks
+*.keystore
+
+# WhatsApp authentication/session data
+server/.wwebjs_auth/
+server/.wwebjs_cache/
+
+# Environment/secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary analysis/backups
+mobile/drishti-automation-analysis.txt
+*.bak
+*.backup
+*.before-*
+backups/
