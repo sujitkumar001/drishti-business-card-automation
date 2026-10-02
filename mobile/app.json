@@ -1,4 +1,4 @@
-﻿{
+{
   "expo": {
     "name": "Drishti",
     "slug": "drishti",
@@ -6,7 +6,6 @@
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
     "icon": "./assets/drishti-icon.png",
-
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
@@ -18,7 +17,6 @@
         ]
       }
     },
-
     "android": {
       "package": "com.drishti.businesscardscanner",
       "permissions": [
@@ -31,7 +29,6 @@
         "backgroundColor": "#FFFFFF"
       }
     },
-
     "plugins": [
       [
         "expo-image-picker",
@@ -46,7 +43,8 @@
         {
           "contactsPermission": "Allow Drishti to save scanned business-card contacts."
         }
-      ]
+      ],
+      "expo-secure-store"
     ]
   }
 }

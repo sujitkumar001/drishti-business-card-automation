@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+
+    <!-- HTTPS remains the default for all other destinations. -->
+    <base-config cleartextTrafficPermitted="false" />
+
+    <!--
+      Development only:
+      Android device -> 127.0.0.1:3000
+      -> adb reverse -> Drishti backend on development PC.
+    -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">127.0.0.1</domain>
+        <domain includeSubdomains="false">localhost</domain>
+    </domain-config>
+
+</network-security-config>

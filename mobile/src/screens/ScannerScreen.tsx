@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import {
   ActivityIndicator,
   Alert,
@@ -186,7 +186,7 @@ export default function ScannerScreen() {
         <Field label="Company" value={contact.company} onChangeText={(v) => update('company', v)} />
 
         <Pressable style={styles.primaryButton} onPress={saveAndSend} disabled={busy}>
-          <Text style={styles.primaryText}>{busy ? 'Workingâ€¦' : 'Save & Send'}</Text>
+          <Text style={styles.primaryText}>{busy ? 'Working...' : 'Save & Send'}</Text>
         </Pressable>
       </ScrollView>
     </KeyboardAvoidingView>
@@ -249,4 +249,3 @@ const styles = StyleSheet.create({
   },
   primaryText: { color: '#FFFFFF', fontSize: 16, fontWeight: '800' }
 });
-

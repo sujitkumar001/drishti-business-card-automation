@@ -44,3 +44,17 @@ mobile/drishti-automation-analysis.txt
 *.backup
 *.before-*
 backups/
+
+# Current per-employee WhatsApp authentication - NEVER COMMIT
+server/.wwebjs_personal_auth/
+
+# Local development snapshots / diagnostics
+BACKUP_*/
+DRISHTI_ARCHITECTURE_AUDIT.txt
+mobile/android/installed-drishti.apk
+
+# Drishti persistent WhatsApp connection registry - NEVER COMMIT
+server/.drishti-data/
+# Local Drishti development/audit artifacts
+/STEP*.txt
+/DRISHTI_*_AUDIT*.txt
